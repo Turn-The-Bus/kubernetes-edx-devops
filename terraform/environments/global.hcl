@@ -8,12 +8,12 @@
 #        Terragrunt modules in this repository.
 #------------------------------------------------------------------------------ 
 locals {
-  platform_name    = "stepwisemath"
-  platform_region  = "mexico"
-  root_domain      = "stepwisemath.ai"
-  aws_region       = "us-east-2"
-  account_id       = "320713933456"
-  ec2_ssh_key_name = "stepwisemath-ohio"
+  platform_name    = "turnthebus"
+  platform_region  = "mumbai"
+  root_domain      = "turnthebus.org"
+  aws_region       = "ap-south-1"
+  account_id       = "293205054626"
+  ec2_ssh_key_name = "TurnTheBus_aws_101019a"
 
   tags = {
     Platform        = local.platform_name

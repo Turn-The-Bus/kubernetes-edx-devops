@@ -5,7 +5,7 @@
 # date: Feb-2022
 #------------------------------------------------------------------------------ 
 variable "environment_domain" {
-  description = "Something like web.stepwisemath.ai or sandbox.stepwisemath.ai. The base app domain"
+  description = "Something like app.turnthebus.org or sandbox.turnthebus.org. The base app domain"
   type        = string
 }
 

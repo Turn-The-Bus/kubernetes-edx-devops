@@ -71,9 +71,9 @@ so we will merge this JSON block to the final rendered configuration that will b
     "THIRD_PARTY_AUTH_BACKENDS": [
         "gcsi_edxapi.booking.BookingOAuth2"
     ],
-    "EDX_DOMAIN_NAME": "dev.stepwisemath.ai",
-    "GCAS_BASE_URL": "https://platform.dev.stepwisemath.ai",
-    "BOOKING_AUTH_BASE_URL": "https://platform.dev.stepwisemath.ai/",
+    "EDX_DOMAIN_NAME": "dev.turnthebus.org",
+    "GCAS_BASE_URL": "https://platform.dev.turnthebus.org",
+    "BOOKING_AUTH_BASE_URL": "https://platform.dev.turnthebus.org/",
     "DATABASES": {
         "default": {
           "OPTIONS": {

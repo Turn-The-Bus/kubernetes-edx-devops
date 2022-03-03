@@ -35,7 +35,7 @@ variable "tags" {
   default     = {}
 }
 variable "environment_domain" {
-  description = "something like web.stepwisemath.ai or sandbox.stepwisemath.ai. Base app domain (route53 zone) for the default cluster ingress"
+  description = "something like app.turnthebus.org or sandbox.turnthebus.org. Base app domain (route53 zone) for the default cluster ingress"
   type        = string
 }
 

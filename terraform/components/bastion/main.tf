@@ -8,7 +8,7 @@
 #------------------------------------------------------------------------------ 
 provider "random" {}
 
-# probably app.stepwisemath.ai or sandbox.stepwisemath.ai
+# probably app.turnthebus.org or sandbox.turnthebus.org
 data "aws_route53_zone" "environment" {
   name = var.environment_domain
 }

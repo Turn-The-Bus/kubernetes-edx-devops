@@ -13,7 +13,7 @@ metadata:
   name: letsencrypt
 spec:
   acme:
-    email: no-reply@stepwisemath.ai
+    email: no-reply@turnthebus.org
     privateKeySecretRef:
       name: letsencrypt
     server: https://acme-v02.api.letsencrypt.org/directory
@@ -33,6 +33,6 @@ spec:
   issuerRef:
     kind: ClusterIssuer
     name: letsencrypt
-  commonName: web.stepwisemath.ai
+  commonName: app.turnthebus.org
   dnsNames:
-    - "*.web.stepwisemath.ai"
+    - "*.app.turnthebus.org"

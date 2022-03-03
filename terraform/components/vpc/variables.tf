@@ -50,7 +50,7 @@ variable "enable_dns_hostnames" {
 }
 
 variable "environment_domain" {
-  description = "probably web.stepwisemath.ai or sandbox.stepwisemath.ai"
+  description = "probably app.turnthebus.org or sandbox.turnthebus.org"
   type        = string
 }
 
@@ -91,7 +91,7 @@ variable "public_subnet_tags" {
 }
 
 variable "root_domain" {
-  description = "probably stepwisemath.ai Base domain (route53 zone) for the default cluster ingress"
+  description = "probably turnthebus.org Base domain (route53 zone) for the default cluster ingress"
   type        = string
 }
 

@@ -141,7 +141,7 @@ jobs:
       #          OPENEDX_AWS_ACCESS_KEY: ABDCE123456789OHBBGQ
       #          OPENEDX_AWS_SECRET_ACCESS_KEY: A123456789srJ8lgel+ABCDEFGHIJKabcdefghijk
       #          S3_STORAGE_BUCKET: web-stepwisemath-mexico-storage
-      #          S3_CUSTOM_DOMAIN: cdn.web.stepwisemath.ai
+      #          S3_CUSTOM_DOMAIN: cdn.app.turnthebus.org
       #          S3_REGION: us-east-2
       # 
       # this config depends on a public read-only AWS S3 bucket policy like this:
@@ -232,4 +232,4 @@ jobs:
       - name: Create admin user
         run:  |-
           $(kubectl get secret admin-edx -n $NAMESPACE  -o json | jq  '.data | map_values(@base64d)' |   jq -r 'keys[] as $k | "export \($k|ascii_upcase)=\(.[$k])"')
-          tutor k8s createuser --password "$ADMIN_PASSWORD" --staff --superuser "$ADMIN_USER" admin@stepwisemath.ai
+          tutor k8s createuser --password "$ADMIN_PASSWORD" --staff --superuser "$ADMIN_USER" admin@turnthebus.org

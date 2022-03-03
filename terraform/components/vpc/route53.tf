@@ -7,7 +7,7 @@
 # usage: create a VPC to contain all Open edX backend resources.
 #------------------------------------------------------------------------------ 
 
-#   stepwisemath.ai
+#   turnthebus.org
 #   un-comment this if the root_domain is managed in route53
 # -----------------------------------------------------------------------------
 data "aws_route53_zone" "root_domain" {
@@ -15,8 +15,8 @@ data "aws_route53_zone" "root_domain" {
 }
 
 
-# [environment].stepwisemath.ai
-# probably app.stepwisemath.ai or sandbox.stepwisemath.ai
+# [environment].turnthebus.org
+# probably app.turnthebus.org or sandbox.turnthebus.org
 # -----------------------------------------------------------------------------
 data "aws_route53_zone" "environment" {
   name = var.environment_domain

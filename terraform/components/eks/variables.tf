@@ -24,7 +24,7 @@ variable "enable_irsa" {
 
 
 variable "environment_domain" {
-  description = "Something like web.stepwisemath.ai or sandbox.stepwisemath.ai. The base app domain"
+  description = "Something like app.turnthebus.org or sandbox.turnthebus.org. The base app domain"
   type        = string
 }
 
@@ -62,7 +62,7 @@ variable "map_accounts" {
 }
 
 variable "root_domain" {
-  description = "Probably stepwisemath.ai. Root domain (route53 zone) for the default cluster ingress."
+  description = "Probably turnthebus.org. Root domain (route53 zone) for the default cluster ingress."
   type        = string
 }
 
