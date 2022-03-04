@@ -20,7 +20,7 @@ spec:
     solvers:
       - dns01:
           route53:
-            region: us-east-2
+            region: ap-south-1
             hostedZoneID: Z0232691KVI7Y7U23HBD
 
 ---

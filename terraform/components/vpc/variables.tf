@@ -56,7 +56,7 @@ variable "environment_domain" {
 
 
 variable "environment_namespace" {
-  description = "probably web-stepwisemath-mexico or sandbox-stepwisemath-mexico"
+  description = "probably web-turnthebus-mumbai or sandbox-turnthebus-mumbai"
   type        = string
 }
 

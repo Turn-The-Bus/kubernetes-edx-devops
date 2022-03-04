@@ -40,16 +40,16 @@ variable "environment_domain" {
 }
 
 variable "environment_namespace" {
-  description = "something like web-stepwisemath-mexico or sandbox-stepwisemath-mexico. Base app domain (route53 zone) for the default cluster ingress"
+  description = "something like web-turnthebus-mumbai or sandbox-turnthebus-mumbai. Base app domain (route53 zone) for the default cluster ingress"
   type        = string
 }
 
 variable "platform_name" {
-  description = "probably stepwisemath"
+  description = "probably turnthebus"
   type        = string
 }
 variable "platform_region" {
-  description = "probably mexico"
+  description = "probably mumbai"
   type        = string
 }
 variable "environment" {
@@ -58,6 +58,6 @@ variable "environment" {
 }
 
 variable "ec2_ssh_key_name" {
-  description = "probably stepwisemath-ohio. The name of the EC2 keypair to use for ssh access to the instance."
+  description = "probably turnthebus-ohio. The name of the EC2 keypair to use for ssh access to the instance."
   type        = string
 }

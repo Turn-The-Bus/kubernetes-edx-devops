@@ -36,7 +36,7 @@ resource "kubernetes_secret" "mysql_root" {
 }
 
 
-resource "random_password" "mysql_stepwisemath" {
+resource "random_password" "mysql_turnthebus" {
   length           = 16
   special          = true
   override_special = "_%@"
@@ -46,15 +46,15 @@ resource "random_password" "mysql_stepwisemath" {
   }
 }
 
-resource "kubernetes_secret" "stepwisemath" {
+resource "kubernetes_secret" "turnthebus" {
   metadata {
-    name      = "mysql-stepwisemath"
+    name      = "mysql-turnthebus"
     namespace = var.environment_namespace
   }
 
   data = {
-    STEPWISEMATH_MYSQL_USERNAME = "stepwisemath"
-    STEPWISEMATH_MYSQL_PASSWORD = random_password.mysql_stepwisemath.result
+    turnthebus_MYSQL_USERNAME = "turnthebus"
+    turnthebus_MYSQL_PASSWORD = random_password.mysql_turnthebus.result
     MYSQL_HOST                  = aws_route53_record.mysql.fqdn
     MYSQL_PORT                  = module.db.db_instance_port
   }

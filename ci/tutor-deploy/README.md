@@ -1,6 +1,6 @@
 # tutor-deploy
 ##  Stepwise Math Tutor Deployment
-This repository contains a set of GitHub actions workflows to deploy Tutor's Open edX onto our [Kubenetes (EKS) cluster](https://github.com/stepwisemath/terraform-aws).
+This repository contains a set of GitHub actions workflows to deploy Tutor's Open edX onto our [Kubenetes (EKS) cluster](https://github.com/turnthebus/terraform-aws).
 
 
 ## How it works
@@ -16,7 +16,7 @@ This workflow needs to collect some parameters for Tutor from external sources, 
 
 Also, the backing services need to be readily available prior to deploying the Open edX platform, because Tutor and the workflow will need to run several initialisation tasks; Django database migrations for example.
 
-All the necessary dependencies need to be deployed prior to deploying an environment for the first time using the terraform stack in [this repo](https://github.com/stepwisemath/terraform-aws) and [this repo](https://github.com/stepwisemath/terraform-openedx).
+All the necessary dependencies need to be deployed prior to deploying an environment for the first time using the terraform stack in [this repo](https://github.com/turnthebus/terraform-aws) and [this repo](https://github.com/turnthebus/terraform-openedx).
 
 The Terraform stack will create all of the resources needed for this deployment workflow to operate and deliver a running edX platform.
 - Kubernetes namespace
@@ -47,7 +47,7 @@ Taking the `dev` environment as an example, the file structure looks like this:
 
 #### config.yml
 This file contains a few entries that will be fed into early the Tutor configuration stage.
-These are the FQDNs of the LMS and CMS components of Open edX and the location of the custom image that we build [here](https://github.com/stepwisemath/tutor-build).
+These are the FQDNs of the LMS and CMS components of Open edX and the location of the custom image that we build [here](https://github.com/turnthebus/tutor-build).
 
 #### k8s
 

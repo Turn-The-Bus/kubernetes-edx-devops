@@ -10,7 +10,7 @@ apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
   name: data-backup
-  namespace: web-stepwisemath-mexico
+  namespace: web-turnthebus-mumbai
 spec:
   schedule: "0 8 * * *"
   jobTemplate:

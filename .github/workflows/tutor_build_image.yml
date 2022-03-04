@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-20.04
     env:
       ECR_REPOSITORY: openedx
-      ECR_REGISTRY: 320713933456.dkr.ecr.us-east-2.amazonaws.com
+      ECR_REGISTRY: 293205054626.dkr.ecr.ap-south-1.amazonaws.com
       TUTOR_VERSION: v13.1.5
     steps:
       - uses: actions/checkout@v1
@@ -33,7 +33,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-2
+          aws-region: ap-south-1
 
       - name: Login to Amazon ECR
         id: login-ecr
@@ -68,7 +68,7 @@ jobs:
       - name: Checkout Theme repo
         uses: actions/checkout@v2
         with:
-          repository: stepwisemath/stepwise-edx-theme
+          repository: turnthebus/stepwise-edx-theme
           path: ${{ env.THEMES_PATH }}/stepwise-edx-theme
           token: ${{ secrets.PAT }}
           ref: main
@@ -76,7 +76,7 @@ jobs:
       - name: Checkout stepwise-edx-plugin repo
         uses: actions/checkout@v2
         with:
-          repository: stepwisemath/stepwise-edx-plugin
+          repository: turnthebus/stepwise-edx-plugin
           path: ${{ env.PLUGINS_PATH }}/stepwise-edx-plugin
           token: ${{ secrets.PAT }}
           ref: main

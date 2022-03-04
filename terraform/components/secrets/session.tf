@@ -27,7 +27,7 @@ resource "kubernetes_secret" "edx_secret_key" {
 }
 
 
-resource "random_password" "stepwisemath_secret_key" {
+resource "random_password" "turnthebus_secret_key" {
   length  = 24
   special = false
   keepers = {
@@ -35,13 +35,13 @@ resource "random_password" "stepwisemath_secret_key" {
   }
 }
 
-resource "kubernetes_secret" "stepwisemath_secret_key" {
+resource "kubernetes_secret" "turnthebus_secret_key" {
   metadata {
-    name      = "stepwisemath-secret-key"
+    name      = "turnthebus-secret-key"
     namespace = var.environment_namespace
   }
 
   data = {
-    STEPWISEMATH_SECRET_KEY = random_password.stepwisemath_secret_key.result
+    turnthebus_SECRET_KEY = random_password.turnthebus_secret_key.result
   }
 }

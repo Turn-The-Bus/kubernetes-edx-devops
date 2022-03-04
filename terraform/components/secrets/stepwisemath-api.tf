@@ -7,7 +7,7 @@
 # usage: create an Open edX application secret for the Stepwise API
 #        for future use.
 #------------------------------------------------------------------------------ 
-resource "random_password" "stepwisemath_api_key" {
+resource "random_password" "turnthebus_api_key" {
   length  = 40
   special = false
   keepers = {
@@ -15,14 +15,14 @@ resource "random_password" "stepwisemath_api_key" {
   }
 }
 
-resource "kubernetes_secret" "stepwisemath_api" {
+resource "kubernetes_secret" "turnthebus_api" {
   metadata {
-    name      = "stepwisemath-api"
+    name      = "turnthebus-api"
     namespace = var.environment_namespace
   }
 
   data = {
-    SPONSORS_PLATFORM_USER_API_KEY = random_password.stepwisemath_api_key.result
+    SPONSORS_PLATFORM_USER_API_KEY = random_password.turnthebus_api_key.result
   }
 }
 

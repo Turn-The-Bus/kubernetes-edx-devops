@@ -1,3 +1,3 @@
 LMS_HOSTNAME=app.turnthebus.org
 CMS_HOSTNAME=studio.app.turnthebus.org
-DOCKER_IMAGE_OPENEDX=320713933456.dkr.ecr.us-east-2.amazonaws.com/openedx:latest
+DOCKER_IMAGE_OPENEDX=293205054626.dkr.ecr.ap-south-1.amazonaws.com/openedx:latest

@@ -6,7 +6,7 @@ macOS Details
 
 see: 
  - https://github.com/overhangio/tutor/blob/master/tutor/templates/config/base.yml
- - https://github.com/stepwisemath/tutor-deploy/blob/main/.github/workflows/deploy_dev.yml#L51
+ - https://github.com/turnthebus/tutor-deploy/blob/main/.github/workflows/deploy_dev.yml#L51
 
 **BIG CLUE** you can run L51 from your dev command line if you have all of the AWS and kubernetes and terra* stuff installed.
 

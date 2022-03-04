@@ -24,7 +24,7 @@ resource "random_password" "clientsecret_edx" {
 }
 
 
-resource "random_password" "clientid_stepwisemath" {
+resource "random_password" "clientid_turnthebus" {
   length  = 40
   special = false
   keepers = {
@@ -32,7 +32,7 @@ resource "random_password" "clientid_stepwisemath" {
   }
 }
 
-resource "random_password" "clientsecret_stepwisemath" {
+resource "random_password" "clientsecret_turnthebus" {
   length  = 128
   special = false
   keepers = {
@@ -52,14 +52,14 @@ resource "kubernetes_secret" "openedx" {
   }
 }
 
-resource "kubernetes_secret" "stepwisemath" {
+resource "kubernetes_secret" "turnthebus" {
   metadata {
-    name      = "stepwisemath-oauth"
+    name      = "turnthebus-oauth"
     namespace = var.environment_namespace
   }
 
   data = {
-    CLIENT_ID     = random_password.clientid_stepwisemath.result
-    CLIENT_SECRET = random_password.clientsecret_stepwisemath.result
+    CLIENT_ID     = random_password.clientid_turnthebus.result
+    CLIENT_SECRET = random_password.clientsecret_turnthebus.result
   }
 }

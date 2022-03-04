@@ -10,12 +10,12 @@ variable "environment_domain" {
 }
 
 variable "environment_namespace" {
-  description = "Something like web-stepwisemath-mexico or sandbox-stepwisemath-mexico. The base app domain"
+  description = "Something like web-turnthebus-mumbai or sandbox-turnthebus-mumbai. The base app domain"
   type        = string
 }
 
 variable "resource_name" {
-    description = "something like 'web-stepwisemath-mexico-storage'"
+    description = "something like 'web-turnthebus-mumbai-storage'"
     type = string
 }
 
@@ -26,6 +26,6 @@ variable "tags" {
 }
 
 variable "aws_region" {
-  description = "probably us-east-2. The region in which the origin S3 bucket was created."
+  description = "probably ap-south-1. The region in which the origin S3 bucket was created."
   type = string
 }
