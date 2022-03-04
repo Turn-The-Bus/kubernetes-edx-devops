@@ -10,9 +10,9 @@
 #   turnthebus.org
 #   un-comment this if the root_domain is managed in route53
 # -----------------------------------------------------------------------------
-data "aws_route53_zone" "root_domain" {
-  name = var.root_domain
-}
+#data "aws_route53_zone" "root_domain" {
+#  name = var.root_domain
+#}
 
 
 # [environment].turnthebus.org
