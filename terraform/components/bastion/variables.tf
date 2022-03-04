@@ -40,7 +40,7 @@ variable "environment_domain" {
 }
 
 variable "environment_namespace" {
-  description = "something like web-turnthebus-mumbai or sandbox-turnthebus-mumbai. Base app domain (route53 zone) for the default cluster ingress"
+  description = "something like app-turnthebus-mumbai or sandbox-turnthebus-mumbai. Base app domain (route53 zone) for the default cluster ingress"
   type        = string
 }
 

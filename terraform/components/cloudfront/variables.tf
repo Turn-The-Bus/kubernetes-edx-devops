@@ -10,12 +10,12 @@ variable "environment_domain" {
 }
 
 variable "environment_namespace" {
-  description = "Something like web-turnthebus-mumbai or sandbox-turnthebus-mumbai. The base app domain"
+  description = "Something like app-turnthebus-mumbai or sandbox-turnthebus-mumbai. The base app domain"
   type        = string
 }
 
 variable "resource_name" {
-    description = "something like 'web-turnthebus-mumbai-storage'"
+    description = "something like 'app-turnthebus-mumbai-storage'"
     type = string
 }
 

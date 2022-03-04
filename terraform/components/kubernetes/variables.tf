@@ -12,7 +12,7 @@ variable "environment_namespace" {
 }
 
 variable "resource_name" {
-  description = "the full environment-qualified name of this resource. example: web-turnthebus-mumbai-s3-backup"
+  description = "the full environment-qualified name of this resource. example: app-turnthebus-mumbai-s3-backup"
   type        = string
 }
 

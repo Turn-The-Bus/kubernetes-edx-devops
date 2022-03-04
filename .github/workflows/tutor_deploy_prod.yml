@@ -26,7 +26,7 @@ jobs:
     env:
       KUBECONFIG: /home/runner/.kube/config
       ENVIRONMENT_ID: prod
-      NAMESPACE: web-turnthebus-mumbai
+      NAMESPACE: app-turnthebus-mumbai
       TUTOR_VERSION: v13.1.5
       OPENEDX_COMMON_VERSION: open-release/maple.2
 
@@ -44,7 +44,7 @@ jobs:
           aws-region: ap-south-1
 
       - name: Get Kube config
-        run: aws eks --region ap-south-1 update-kubeconfig --name web-turnthebus-mumbai --alias eks-prod
+        run: aws eks --region ap-south-1 update-kubeconfig --name app-turnthebus-mumbai --alias eks-prod
 
       - name: Install kubectl
         uses: azure/setup-kubectl@v1
@@ -140,7 +140,7 @@ jobs:
       #        example values:
       #          OPENEDX_AWS_ACCESS_KEY: ABDCE123456789OHBBGQ
       #          OPENEDX_AWS_SECRET_ACCESS_KEY: A123456789srJ8lgel+ABCDEFGHIJKabcdefghijk
-      #          S3_STORAGE_BUCKET: web-turnthebus-mumbai-storage
+      #          S3_STORAGE_BUCKET: app-turnthebus-mumbai-storage
       #          S3_CUSTOM_DOMAIN: cdn.app.turnthebus.org
       #          S3_REGION: ap-south-1
       # 
@@ -158,7 +158,7 @@ jobs:
       #                      "s3:GetObject*",
       #                      "s3:List*"
       #                  ],
-      #                  "Resource": "arn:aws:s3:::web-turnthebus-mumbai-storage/*"
+      #                  "Resource": "arn:aws:s3:::app-turnthebus-mumbai-storage/*"
       #              }
       #          ]
       #      }

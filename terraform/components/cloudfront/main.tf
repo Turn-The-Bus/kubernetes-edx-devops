@@ -10,7 +10,7 @@
 #
 # the origin of the Cloudfront distribution will be an S3 bucket named 
 # of the form [environment]-[platform_name]-[platform_region]-storage
-# example: web-turnthebus-mumbai-storage
+# example: app-turnthebus-mumbai-storage
 #
 #------------------------------------------------------------------------------ 
 

@@ -41,7 +41,7 @@ variable "map_users" {
 
 
 variable "environment_namespace" {
-  description = "Something like web-turnthebus-mumbai or sandbox-turnthebus-mumbai. The base app domain"
+  description = "Something like app-turnthebus-mumbai or sandbox-turnthebus-mumbai. The base app domain"
   type        = string
 }
 
