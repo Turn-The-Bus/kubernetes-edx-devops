@@ -9,6 +9,6 @@ resource "aws_route53_record" "mysql" {
   name    = "mysql"
   type    = "CNAME"
   ttl     = "300"
-  records = ["${module.db.db_instance_domain}"]
+  records = ["${module.db.db_instance_address}"]
 
   }
