@@ -35,7 +35,7 @@ variable "environment" {
 }
 
 variable "resource_name" {
-  description = "the full environment-qualified name of this resource. example: app-turnthebus-mumbai-s3-backup"
+  description = "the full environment-qualified name of this resource."
   type        = string
 }
 

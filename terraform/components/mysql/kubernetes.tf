@@ -36,30 +36,6 @@ resource "kubernetes_secret" "mysql_root" {
 }
 
 
-resource "random_password" "mysql_turnthebus" {
-  length           = 16
-  special          = true
-  override_special = "_%@"
-  keepers = {
-    version = "1"
-
-  }
-}
-
-resource "kubernetes_secret" "turnthebus" {
-  metadata {
-    name      = "mysql-turnthebus"
-    namespace = var.environment_namespace
-  }
-
-  data = {
-    turnthebus_MYSQL_USERNAME = "turnthebus"
-    turnthebus_MYSQL_PASSWORD = random_password.mysql_turnthebus.result
-    MYSQL_HOST                  = aws_route53_record.mysql.fqdn
-    MYSQL_PORT                  = module.db.db_instance_port
-  }
-}
-
 resource "random_password" "mysql_openedx" {
   length           = 16
   special          = true

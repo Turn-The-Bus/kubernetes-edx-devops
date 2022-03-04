@@ -6,6 +6,10 @@
 #
 # usage: create an ElastiCache Redis cache
 #------------------------------------------------------------------------------ 
+variable "environment_domain" {
+  type = string
+}
+
 variable "create_elasticache_instance" {
   description = "Whether to create a cache instance"
   type        = bool
@@ -176,7 +180,7 @@ variable "environment_namespace" {
 }
 
 variable "resource_name" {
-  description = "the full environment-qualified name of this resource. example: app-turnthebus-mumbai-s3-backup"
+  description = "the full environment-qualified name of this resource."
   type        = string
 }
 

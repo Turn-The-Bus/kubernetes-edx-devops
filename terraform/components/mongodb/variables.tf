@@ -52,12 +52,12 @@ variable "cluster_parameters" {
 
 variable "cluster_dns_name" {
   type        = string
-  description = "Probably mongodb.master.app.turnthebus.org. Name of the cluster CNAME record to create in the parent DNS zone specified by `zone_id`. If left empty, the name will be auto-asigned using the format `master.var.name`"
+  description = "Name of the cluster CNAME record to create in the parent DNS zone specified by `zone_id`. If left empty, the name will be auto-asigned using the format `master.var.name`"
   default     = ""
 }
 variable "reader_dns_name" {
   type        = string
-  description = "Probably mongodb.reader.app.turnthebus.org. Name of the cluster CNAME record to create in the parent DNS zone specified by `zone_id`. If left empty, the name will be auto-asigned using the format `replicas.var.name`"
+  description = "Name of the cluster CNAME record to create in the parent DNS zone specified by `zone_id`. If left empty, the name will be auto-asigned using the format `replicas.var.name`"
   default     = ""
 }
 

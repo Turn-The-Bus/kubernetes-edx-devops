@@ -24,7 +24,6 @@ variable "enable_irsa" {
 
 
 variable "environment_domain" {
-  description = "Something like app.turnthebus.org or sandbox.turnthebus.org. The base app domain"
   type        = string
 }
 
@@ -41,7 +40,6 @@ variable "map_users" {
 
 
 variable "environment_namespace" {
-  description = "Something like app-turnthebus-mumbai or sandbox-turnthebus-mumbai. The base app domain"
   type        = string
 }
 
@@ -62,7 +60,7 @@ variable "map_accounts" {
 }
 
 variable "root_domain" {
-  description = "Probably turnthebus.org. Root domain (route53 zone) for the default cluster ingress."
+  description = "Root domain (route53 zone) for the default cluster ingress."
   type        = string
 }
 

@@ -35,29 +35,23 @@ variable "tags" {
   default     = {}
 }
 variable "environment_domain" {
-  description = "something like app.turnthebus.org or sandbox.turnthebus.org. Base app domain (route53 zone) for the default cluster ingress"
   type        = string
 }
 
 variable "environment_namespace" {
-  description = "something like app-turnthebus-mumbai or sandbox-turnthebus-mumbai. Base app domain (route53 zone) for the default cluster ingress"
   type        = string
 }
 
 variable "platform_name" {
-  description = "probably turnthebus"
   type        = string
 }
 variable "platform_region" {
-  description = "probably mumbai"
   type        = string
 }
 variable "environment" {
-  description = "probably either web or sandbox"
   type        = string
 }
 
 variable "ec2_ssh_key_name" {
-  description = "probably turnthebus-ohio. The name of the EC2 keypair to use for ssh access to the instance."
   type        = string
 }

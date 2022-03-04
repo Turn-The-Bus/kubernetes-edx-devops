@@ -26,22 +26,3 @@ resource "kubernetes_secret" "edx_secret_key" {
   }
 }
 
-
-resource "random_password" "turnthebus_secret_key" {
-  length  = 24
-  special = false
-  keepers = {
-    version = "1"
-  }
-}
-
-resource "kubernetes_secret" "turnthebus_secret_key" {
-  metadata {
-    name      = "turnthebus-secret-key"
-    namespace = var.environment_namespace
-  }
-
-  data = {
-    turnthebus_SECRET_KEY = random_password.turnthebus_secret_key.result
-  }
-}

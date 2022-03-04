@@ -10,7 +10,6 @@
 #
 # the origin of the Cloudfront distribution will be an S3 bucket named 
 # of the form [environment]-[platform_name]-[platform_region]-storage
-# example: app-turnthebus-mumbai-storage
 #
 #------------------------------------------------------------------------------ 
 
@@ -71,8 +70,6 @@ module "cdn_environment_domain" {
   retain_on_delete    = false
   wait_for_deployment = false
   
-  default_root_object = "stepwise-logo-transparent.png"
-
   origin = {
     s3_bucket = {
       domain_name = "${local.s3_bucket_domain}"

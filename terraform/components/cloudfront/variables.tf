@@ -5,17 +5,14 @@
 # date: Feb-2022
 #------------------------------------------------------------------------------ 
 variable "environment_domain" {
-  description = "Something like app.turnthebus.org or sandbox.turnthebus.org. The base app domain"
   type        = string
 }
 
 variable "environment_namespace" {
-  description = "Something like app-turnthebus-mumbai or sandbox-turnthebus-mumbai. The base app domain"
   type        = string
 }
 
 variable "resource_name" {
-    description = "something like 'app-turnthebus-mumbai-storage'"
     type = string
 }
 
@@ -26,6 +23,6 @@ variable "tags" {
 }
 
 variable "aws_region" {
-  description = "probably ap-south-1. The region in which the origin S3 bucket was created."
+  description = "The region in which the origin S3 bucket was created."
   type = string
 }

@@ -24,22 +24,6 @@ resource "random_password" "clientsecret_edx" {
 }
 
 
-resource "random_password" "clientid_turnthebus" {
-  length  = 40
-  special = false
-  keepers = {
-    version = "1"
-  }
-}
-
-resource "random_password" "clientsecret_turnthebus" {
-  length  = 128
-  special = false
-  keepers = {
-    version = "1"
-  }
-}
-
 resource "kubernetes_secret" "openedx" {
   metadata {
     name      = "edx-api"
@@ -52,14 +36,3 @@ resource "kubernetes_secret" "openedx" {
   }
 }
 
-resource "kubernetes_secret" "turnthebus" {
-  metadata {
-    name      = "turnthebus-oauth"
-    namespace = var.environment_namespace
-  }
-
-  data = {
-    CLIENT_ID     = random_password.clientid_turnthebus.result
-    CLIENT_SECRET = random_password.clientsecret_turnthebus.result
-  }
-}
