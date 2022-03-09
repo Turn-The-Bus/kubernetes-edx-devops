@@ -227,7 +227,7 @@ jobs:
 
       - name: Set theme
         run:  |-
-          tutor k8s settheme stepwise-edx-theme
+          tutor k8s settheme turnthebus-edx-theme
 
       - name: Create admin user
         run:  |-
