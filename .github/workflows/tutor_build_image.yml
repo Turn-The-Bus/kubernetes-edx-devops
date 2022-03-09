@@ -68,42 +68,18 @@ jobs:
       - name: Checkout Theme repo
         uses: actions/checkout@v2
         with:
-          repository: turnthebus/stepwise-edx-theme
-          path: ${{ env.THEMES_PATH }}/stepwise-edx-theme
+          repository: turnthebus/turnthebus-edx-theme
+          path: ${{ env.THEMES_PATH }}/turnthebus-edx-theme
           token: ${{ secrets.PAT }}
           ref: main
 
-      - name: Checkout stepwise-edx-plugin repo
+      - name: Checkout turnthebus-edx-plugin repo
         uses: actions/checkout@v2
         with:
-          repository: turnthebus/stepwise-edx-plugin
-          path: ${{ env.PLUGINS_PATH }}/stepwise-edx-plugin
+          repository: turnthebus/turnthebus-edx-plugin
+          path: ${{ env.PLUGINS_PATH }}/turnthebus-edx-plugin
           token: ${{ secrets.PAT }}
           ref: main
-
-      - name: Checkout geogebra_xblock repo
-        uses: actions/checkout@v2
-        with:
-          repository: QueriumCorp/geogebra_xblock
-          path: ${{ env.PLUGINS_PATH }}/geogebra_xblock
-          token: ${{ secrets.PAT }}
-          ref: lilac.master
-
-      - name: Checkout hdrXblock repo
-        uses: actions/checkout@v2
-        with:
-          repository: QueriumCorp/hdrXblock
-          path: ${{ env.PLUGINS_PATH }}/hdrXblock
-          token: ${{ secrets.PAT }}
-          ref: lilac.master
-
-      - name: Checkout swxblock repo
-        uses: actions/checkout@v2
-        with:
-          repository: QueriumCorp/swxblock
-          path: ${{ env.PLUGINS_PATH }}/swxblock
-          token: ${{ secrets.PAT }}
-          ref: lilac.master
 
       - name: Validate custom resource locations
         run: |
