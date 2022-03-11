@@ -5,7 +5,7 @@ This repository contains a GitHub actions workflow that assists with the process
 
 ## Why do we need a custom image.
 We need a custom image because we need to pack a custom [theme](https://github.com/Turn-The-Bus/stepwise-edx-theme) and
-an integration [plug-in](https://github.com/Turn-The-Bus/stepwise-edx-plugin) for edx-platform.
+an integration [plug-in](https://github.com/Turn-The-Bus/turnthebus-edx-plugin) for edx-platform.
 The contents of these two repositories need to be included in the resulting image.
 
 ## How it works
