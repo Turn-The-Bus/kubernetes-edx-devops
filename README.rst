@@ -201,7 +201,7 @@ V. Build your Tutor Docker Image
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Use `this automated Github Actions workflow <actions/workflows/tutor_build_image.yml>`_ to build a customized Open edX Docker container based on the latest stable version of Open edX (current maple.2) and
-your `Open edX custom theme repository <https://github.com/turnthebus/stepwise-edx-theme>`_ and `Open edX plugin repository <https://github.com/turnthebus/stepwise-edx-plugin>`_. Your new Docker image will be automatically uploaded to `AWS Amazon Elastic Container Registry <https://ap-south-1.console.aws.amazon.com/ecr/repositories?region=ap-south-1>`_
+your `Open edX custom theme repository <https://github.com/Turn-The-Bus/stepwise-edx-theme>`_ and `Open edX plugin repository <https://github.com/Turn-The-Bus/stepwise-edx-plugin>`_. Your new Docker image will be automatically uploaded to `AWS Amazon Elastic Container Registry <https://ap-south-1.console.aws.amazon.com/ecr/repositories?region=ap-south-1>`_
  
 
 VI. Deploy your Docker Image to a Kubernetes Cluster

@@ -68,7 +68,7 @@ jobs:
       - name: Checkout Theme repo
         uses: actions/checkout@v2
         with:
-          repository: turnthebus/turnthebus-edx-theme
+          repository: Turn-The-Bus/turnthebus-edx-theme
           path: ${{ env.THEMES_PATH }}/turnthebus-edx-theme
           token: ${{ secrets.PAT }}
           ref: main
@@ -76,7 +76,7 @@ jobs:
       - name: Checkout turnthebus-edx-plugin repo
         uses: actions/checkout@v2
         with:
-          repository: turnthebus/turnthebus-edx-plugin
+          repository: Turn-The-Bus/turnthebus-edx-plugin
           path: ${{ env.PLUGINS_PATH }}/turnthebus-edx-plugin
           token: ${{ secrets.PAT }}
           ref: main
