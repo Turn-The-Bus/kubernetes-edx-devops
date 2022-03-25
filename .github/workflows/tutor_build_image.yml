@@ -99,7 +99,9 @@ jobs:
 
       - name: Build the image
         # see: https://docs.tutor.overhang.io/configuration.html
-        run: tutor images build openedx
+        run: tutor images build openedx \
+		--build-arg EDX_PLATFORM_REPOSITORY=https://github.com/Turn-The-Bus/edx-platform.git \
+		--build-arg EDX_PLATFORM_VERSION=release-2022-03-16-04.47
 
       - name: Push the image
         run: |
