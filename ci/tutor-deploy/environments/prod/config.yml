@@ -1,6 +1,6 @@
 LMS_HOSTNAME=app.turnthebus.org
 CMS_HOSTNAME=studio.app.turnthebus.org
 DOCKER_IMAGE_OPENEDX=293205054626.dkr.ecr.ap-south-1.amazonaws.com/openedx:latest
-#EDX PLATFORM FORK
+#EDX PLATFORM FORK REPO
 EDX_PLATFORM_REPOSITORY=https://github.com/Turn-The-Bus/edx-platform.git
 EDX_PLATFORM_VERSION=open-release/ttb-development
