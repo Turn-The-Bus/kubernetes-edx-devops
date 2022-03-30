@@ -45,7 +45,7 @@
         "ENABLE_LTI_PROVIDER": false,
         "ENABLE_MKTG_SITE": false,
         "ENABLE_MOBILE_REST_API": true,
-        "ENABLE_OAUTH2_PROVIDER": false,
+        "ENABLE_OAUTH2_PROVIDER": true,
         "ENABLE_PUBLISHER": false,
         "ENABLE_READING_FROM_MULTIPLE_HISTORY_TABLES": false,
         "ENABLE_SPECIAL_EXAMS": false,
