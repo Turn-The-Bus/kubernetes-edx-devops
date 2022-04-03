@@ -98,7 +98,7 @@ jobs:
           tutor config save --set DOCKER_IMAGE_OPENEDX=${ECR_REGISTRY}/${ECR_REPOSITORY}:${REPOSITORY_TAG}
 
       - name: Build the image
-        # see: https://docs.tutor.overhang.io/configuration.html
+        # see:  https://docs.tutor.overhang.io/configuration.html
         run: tutor images build openedx
 
 
