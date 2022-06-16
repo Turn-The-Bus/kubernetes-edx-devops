@@ -16,3 +16,4 @@
 #django-debug-toolbar
 
 -e ./turnthebus-edx-plugin
+-e ./turnthebus-analytics-plugin

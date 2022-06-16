@@ -81,6 +81,14 @@ jobs:
           token: ${{ secrets.PAT }}
           ref: main
 
+      - name: Checkout turnthebus-analytics-plugin repo
+        uses: actions/checkout@v2
+        with:
+          repository: Turn-The-Bus/turnthebus-analytics-plugin
+          path: ${{ env.PLUGINS_PATH }}/turnthebus-analytics-plugin
+          token: ${{ secrets.PAT }}
+          ref: main
+
       - name: Validate custom resource locations
         run: |
           echo "### Themes"
